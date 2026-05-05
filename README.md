@@ -8,12 +8,19 @@ O linka tem como público alvo alunos e professores vinculados ao Departamento d
 Através de técnicas de webscrapping em fontes confiáveis como Plataforma Lattes, Google Scholar, IEEE, SIGAA Público, entre outros, a aplicação busca otimizar a divulgação de oportunidades acadêmicas de pesquisa, também deixando disponível opções de edição manual para professores e alunos em seus respectivos perfis.
 
 ## Stakeholders
+- Alunos
+- Professores
+- Servidores do departamento
 
-## Requisitos funcionais
+## Requisitos
+- Login via conta Office 365
+- Carregar informações a partir de fontes diversas
 - Perfil de grupo de pesquisa
 - Perfil de professor
 - Perfil de aluno
-- Opção de demostrar interesse  
+- Opção de demostrar interesse por uma vaga ou grupo de pesquisa
+- Pesquisar por temas
+- Pesquisar por alunos com determinadas habilidades e interesses
 
 ## Equipe
 - 211010350	Célio Júnio de Freitas Eduardo
