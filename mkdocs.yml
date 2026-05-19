@@ -1,0 +1,4 @@
+site_name: documentation
+
+theme:
+  name: material
