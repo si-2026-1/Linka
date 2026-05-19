@@ -45,13 +45,13 @@ Através de técnicas de webscrapping em fontes confiáveis como Plataforma Latt
 ## Épicos
 1. Perfis
 Criação e edição das páginas de perfil de alunos, professores e grupos de pesquisa
-3. Autenticação
+2. Autenticação
 Integração com login via conta institucional Office 365
-4. Busca e Descoberta
+3. Busca e Descoberta
 Mecanismos de pesquisa e filtragem para que alunos encontrem oportunidades por tema e professores encontrem alunos por habilidade ou interesse
-5. Ingestão de Dados
+4. Ingestão de Dados
 Importação automatizada de dados acadêmicos via web scraping (Lattes, Scholar, SIGAA etc.) e edição manual para complementar ou corrigir informações nos perfis
-6. Oportunidades e Interações (sistema de notificações)
+5. Oportunidades e Interações (sistema de notificações)
 Fluxo de publicação de vagas por professores, demonstração de interesse por alunos e notificações básicas entre as partes
 
 ## Equipe
