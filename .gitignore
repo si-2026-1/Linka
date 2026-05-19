@@ -1,0 +1,14 @@
+# Build artifacts
+site/
+
+# Python virtual environment
+.venv/
+path/to/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE / Editor specific
+.vscode/
+.idea/
