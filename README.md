@@ -13,21 +13,52 @@ Através de técnicas de webscrapping em fontes confiáveis como Plataforma Latt
 - Servidores do departamento
 
 ## Requisitos
-- Login via conta Office 365
-- Carregar informações a partir de fontes diversas
-- Perfil de grupo de pesquisa
-- Perfil de professor
-- Perfil de aluno
-- Opção de demostrar interesse por uma vaga ou grupo de pesquisa
-- Pesquisar por temas
-- Pesquisar por alunos com determinadas habilidades e interesses
+### Requisitos Funcionais
+- O sistema deve permitir que alunos criem e editem seu perfil com informações acadêmicas (como titulação), habilidades e áreas de interesse
+- O sistema deve permitir que professores criem e editem seu perfil com informações acadêmicas e linhas de pesquisa
+- O sistema deve permitir que servidores do departamento realizem edições em informações gerais relacionados ao respectivo departamento (como vagas e oportunidades)
+- O sistema deve permitir a criação e edição de perfis de grupos de pesquisa vinculados a um ou mais professores
+- O sistema deve exibir as oportunidades vinculadas ao perfil do professor ou grupo de pesquisa
+
+- O sistema deve permitir login exclusivamente via conta institucional Office 365
+- O sistema deve restringir o acesso a usuários autenticados com vínculo à UnB
+- O sistema deve diferenciar os papéis de aluno e professor após a autenticação, liberando as funcionalidades correspondentes a cada perfil
+
+- O sistema deve permitir busca de oportunidades e grupos de pesquisa por tema ou área do conhecimento
+- O sistema deve permitir que professores busquem alunos filtrando por habilidades e interesses
+- O sistema deve exibir resultados de busca com informações resumidas do perfil ou oportunidade encontrada
+
+- O sistema deve importar dados acadêmicos de professores e alunos automaticamente a partir de fontes como Lattes, Google Scholar, IEEE e SIGAA
+- O sistema deve permitir que usuários revisem, complementem ou corrijam manualmente as informações importadas em seus perfis
+- O sistema deve indicar a origem dos dados exibidos no perfil (fonte importada ou edição manual)
+
+- O sistema deve permitir que professores (ou servidores do departamento) publiquem, editem e encerrem vagas de pesquisa ou monitoria
+- O sistema deve permitir que alunos demonstrem interesse em uma vaga ou grupo de pesquisa
+- O sistema deve notificar o professor quando um aluno demonstrar interesse em sua vaga
+- O sistema deve notificar o aluno quando uma nova oportunidade compatível com seus interesses for publicada
+
+### Requisitos Não Funcionais
+- A interface deve ser responsiva e funcionar adequadamente em dispositivos móveis e desktops (Usabilidade)
+- O processo de web scraping deve ocorrer em segundo plano, sem impactar a experiência do usuário (Desempenho)
+- O acesso à plataforma deve ser restrito a usuários com conta institucional válida (Segurança)
+
+## Épicos
+1. Perfis
+Criação e edição das páginas de perfil de alunos, professores e grupos de pesquisa
+2. Autenticação
+Integração com login via conta institucional Office 365
+3. Busca e Descoberta
+Mecanismos de pesquisa e filtragem para que alunos encontrem oportunidades por tema e professores encontrem alunos por habilidade ou interesse
+4. Ingestão de Dados
+Importação automatizada de dados acadêmicos via web scraping (Lattes, Scholar, SIGAA etc.) e edição manual para complementar ou corrigir informações nos perfis
+5. Oportunidades e Interações (sistema de notificações)
+Fluxo de publicação de vagas por professores, demonstração de interesse por alunos e notificações básicas entre as partes
 
 ## Equipe
 - 211010350	Célio Júnio de Freitas Eduardo
 - 232002539	Guilherme Delmonte Pereira de Souza Rios
 - 242037322	Izadora Netz Sieczkowski
 - 241039681	Luisa Ramos Barros
-- 222034397	Ycaro Rodrigo Rocha Santana
 - 231037020 Suzana Miranda
 
 ## Histórico de Atualizações
