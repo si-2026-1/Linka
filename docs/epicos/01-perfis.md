@@ -2,10 +2,10 @@
 
 ## Descrição
 
-Criação e edição das páginas de perfil de alunos, professores e grupos de pesquisa
+Criação e edição das páginas de perfil de estudantes, professores e grupos de pesquisa
 
 ## Requisitos vinculados
-- **RF01**: O sistema deve permitir que alunos criem e editem seu perfil com informações acadêmicas (como titulação), habilidades e áreas de interesse
+- **RF01**: O sistema deve permitir que estudantes criem e editem seu perfil com informações acadêmicas (como titulação), habilidades e áreas de interesse
 - **RF02**: O sistema deve permitir que professores criem e editem seu perfil com informações acadêmicas e linhas de pesquisa
 - **RF03**: O sistema deve permitir que servidores do departamento realizem edições em informações gerais relacionados ao respectivo departamento (como vagas e oportunidades)
 - **RF04**: O sistema deve permitir a criação e edição de perfis de grupos de pesquisa vinculados a um ou mais professores
@@ -15,8 +15,12 @@ Criação e edição das páginas de perfil de alunos, professores e grupos de p
 
 ## Histórias de usuário
 
-- **HU-01.01**: Criar e editar perfil de aluno
-- **HU-01.02**: Criar e editar perfil de professor/pesquisador
-- **HU-01.03**: Criar e editar perfil de grupo de pesquisa
-- **HU-01.03**: Criar e editar perfil de servidor do departamento
+- **HU-01.01**: Criar perfil de aluno
+- **HU-01.02**: Editar perfil de aluno
+- **HU-01.03**: Criar perfil de professor/pesquisador
+- **HU-01.04**: Editar perfil de professor/pesquisador
+- **HU-01.05**: Criar perfil de grupo de pesquisa
+- **HU-01.06**: Editar perfil de grupo de pesquisa
+- **HU-01.07**: Criar perfil de servidor do departamento
+- **HU-01.08**: Editar perfil de servidor do departamento
 
