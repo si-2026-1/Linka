@@ -1,0 +1,103 @@
+# HU-04.01: Execução e Orquestração da Rotina de Scraping
+
+**Ator Principal:** Administrador do Sistema / Equipe de Manutenção
+
+**Módulo do Sistema:** Módulo de Ingestão de Dados (Épico 4)
+
+**Pré-condição:** Professores possuírem os identificadores únicos (ID Lattes / ID SIGAA) cadastrados no banco de dados.
+
+---
+
+### 1. Descrição Narrativa
+
+> **Como** administrador do sistema ou membro da equipe de manutenção,
+> 
+> 
+> **Gostaria de** disparar e monitorar a rotina automatizada de ingestão de dados via web scraping para os perfis dos docentes,
+> 
+> 
+> **Para** garantir a atualização em lote dos dados acadêmicos estruturados de forma centralizada e sem onerar os servidores de aplicação durante o horário de pico.
+> 
+> 
+
+---
+
+### 2. Checklist de Componentes da Interface (UI/UX)
+
+*O que o Painel de Administração/Manutenção precisa conter para controle do ecossistema de scraping:*
+
+* [ ] Painel de controle de triggers contendo: `Iniciar Scraping Global (Em Lote)` e `Sincronizar Docente Específico`
+
+* [ ] Dashboard com indicadores gráficos de estado das tarefas em tempo real: `Pendente`, `Processando`, `Sucesso`, `Falha`
+
+* [ ] Filtro de visualização por Fonte Externa (Lattes, Google Scholar, IEEE, SIGAA) para análise de quebras de layout
+
+
+* [ ] Console de Logs integrado para exibição de erros de infraestrutura (ex: timeouts, CAPTCHAs, HTTP 429)
+
+
+* [ ] Indicador visual de volumetria: número de perfis atualizados versus pendentes no ciclo de execução atual
+
+
+
+---
+
+### 3. Critérios de Aceitação (Regras de Negócio e Validações)
+
+*O comportamento esperado do sistema e suas restrições lógicas:*
+
+#### Fluxo Principal (Sucesso):
+
+* **Cenário 1: Disparo e Desacoplamento Assíncrono**
+* **Dado** que o administrador acionou a rotina de sincronização em lote ou individual,
+
+
+* **Quando** o sistema receber o comando,
+* **Então** deve empacotar a tarefa, enviá-la para a fila de mensageria em background e liberar imediatamente o painel com o estado do Job como `Processando` (atendendo ao **RNF02**).
+
+
+
+
+
+#### Fluxo de Exceção (Validações e Casos de Borda):
+
+* **Cenário 2: Prevenção de Homônimos Acadêmicos (Mapeamento Estrito)**
+* **Dado** que a rotina automatizada iniciou o scraping de um docente,
+
+
+* **Quando** o scraper executar a busca nas fontes,
+* **Então** o script está proibido de realizar buscas textuais puras pelo nome do professor; a consulta deve obrigatoriamente injetar e validar o ID estrito (ex: URL direta do Lattes ou identificador numérico interno), abortando o job se houver ambiguidade.
+
+
+* **Cenário 3: Resiliência a Bloqueios de Rede (Rate Limiting Externo)**
+* **Dado** que uma fonte externa retorne um código HTTP 429 (Too Many Requests),
+* **Quando** o worker capturar essa exceção,
+* **Então** o sistema deve congelar temporariamente as próximas requisições daquela fila específica, aplicando um algoritmo de *Exponential Backoff* com jitter antes de reatar a tarefa.
+
+
+* **Cenário 4: Preservação de Ajustes Manuais dos Professores (Concorrência)**
+* **Dado** que um professor editou manualmente um campo de seu perfil para corrigir um dado incorreto,
+
+
+* **Quando** o robô terminar de raspar os dados brutos e tentar salvar as atualizações,
+* **Então** o sistema deve verificar se o dado local foi modificado manualmente e impedir que a rotina automática sobrescreva de forma cega a correção feita pelo docente (ver tratamento técnico abaixo).
+
+
+
+
+
+---
+
+### 4. Impacto Estrutural e Arquitetura de Dados
+
+*Mapeamento lógico e modelo de programação para o processamento assíncrono:*
+
+* **Coleções/Entidades Afetadas:** `professores_perfis`, `scraping_log_jobs`, `fontes_autenticadas`
+
+* **Atributos Modificados/Atualizados:**
+
+* `scraping_log_jobs.status`: transiciona de `PENDING` $\rightarrow$ `RUNNING` $\rightarrow$ `COMPLETED` / `FAILED`.
+
+
+* `professores_perfis.dados_academicos`: atualização seletiva dos nós JSON.
+* `professores_perfis.metadata_provenance`: dicionário mapeando qual a origem ativa de cada campo (`manual` ou `importado_lattes`).
