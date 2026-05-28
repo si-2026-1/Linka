@@ -12,36 +12,6 @@ Através de técnicas de webscrapping em fontes confiáveis como Plataforma Latt
 - Professores
 - Servidores do departamento
 
-## Requisitos
-### Requisitos Funcionais
-- O sistema deve permitir que alunos criem e editem seu perfil com informações acadêmicas (como titulação), habilidades e áreas de interesse
-- O sistema deve permitir que professores criem e editem seu perfil com informações acadêmicas e linhas de pesquisa
-- O sistema deve permitir que servidores do departamento realizem edições em informações gerais relacionados ao respectivo departamento (como vagas e oportunidades)
-- O sistema deve permitir a criação e edição de perfis de grupos de pesquisa vinculados a um ou mais professores
-- O sistema deve exibir as oportunidades vinculadas ao perfil do professor ou grupo de pesquisa
-
-- O sistema deve permitir login exclusivamente via conta institucional Office 365
-- O sistema deve restringir o acesso a usuários autenticados com vínculo à UnB
-- O sistema deve diferenciar os papéis de aluno e professor após a autenticação, liberando as funcionalidades correspondentes a cada perfil
-
-- O sistema deve permitir busca de oportunidades e grupos de pesquisa por tema ou área do conhecimento
-- O sistema deve permitir que professores busquem alunos filtrando por habilidades e interesses
-- O sistema deve exibir resultados de busca com informações resumidas do perfil ou oportunidade encontrada
-
-- O sistema deve importar dados acadêmicos de professores automaticamente a partir de fontes como Lattes, Google Scholar, IEEE e SIGAA.
-- O sistema deve permitir que professores, servidores do departamento e administradores revisem, complementem ou corrijam manualmente as informações importadas nos perfis dos docentes.
-- O sistema deve indicar a origem dos dados exibidos no perfil (fonte importada ou edição manual)
-
-- O sistema deve permitir que professores (ou servidores do departamento) publiquem, editem e encerrem vagas de pesquisa ou monitoria
-- O sistema deve permitir que alunos demonstrem interesse em uma vaga ou grupo de pesquisa
-- O sistema deve notificar o professor quando um aluno demonstrar interesse em sua vaga
-- O sistema deve notificar o aluno quando uma nova oportunidade compatível com seus interesses for publicada
-
-### Requisitos Não Funcionais
-- A interface deve ser responsiva e funcionar adequadamente em dispositivos móveis e desktops (Usabilidade)
-- O processo de web scraping deve ocorrer em segundo plano, sem impactar a experiência do usuário (Desempenho)
-- O acesso à plataforma deve ser restrito a usuários com conta institucional válida (Segurança)
-
 
 ## Épicos
 1. Perfis
