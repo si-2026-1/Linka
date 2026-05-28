@@ -28,8 +28,8 @@ Através de técnicas de webscrapping em fontes confiáveis como Plataforma Latt
 - O sistema deve permitir que professores busquem alunos filtrando por habilidades e interesses
 - O sistema deve exibir resultados de busca com informações resumidas do perfil ou oportunidade encontrada
 
-- O sistema deve importar dados acadêmicos de professores e alunos automaticamente a partir de fontes como Lattes, Google Scholar, IEEE e SIGAA
-- O sistema deve permitir que usuários revisem, complementem ou corrijam manualmente as informações importadas em seus perfis
+- O sistema deve importar dados acadêmicos de professores automaticamente a partir de fontes como Lattes, Google Scholar, IEEE e SIGAA.
+- O sistema deve permitir que professores, servidores do departamento e administradores revisem, complementem ou corrijam manualmente as informações importadas nos perfis dos docentes.
 - O sistema deve indicar a origem dos dados exibidos no perfil (fonte importada ou edição manual)
 
 - O sistema deve permitir que professores (ou servidores do departamento) publiquem, editem e encerrem vagas de pesquisa ou monitoria
