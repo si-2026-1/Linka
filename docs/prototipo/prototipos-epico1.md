@@ -6,16 +6,16 @@ A versão principal do protótipo, para fins de visualização, foi construída 
 
 [Perfil estudante: protótipo navegável](https://www.figma.com/proto/hjdInaixuSTPC1rqKgWsKU/Linka?page-id=0%3A1&node-id=47-1031&viewport=100%2C567%2C0.49&t=XQGKSJVHmNfB8ONt-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=47%3A1031)
 
-<img src="visao-estudante-perfil-estudante.png" alt="Print da interface do perfil de estudante" />
+![Print da interface do perfil de estudante](visao-estudante-perfil-estudante.png)
 
 --------------
 
 [Perfil docente: protótipo navegável](https://www.figma.com/proto/hjdInaixuSTPC1rqKgWsKU/Linka?page-id=0%3A1&node-id=47-1905&viewport=100%2C567%2C0.49&t=XQGKSJVHmNfB8ONt-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=47%3A1905)
 
-<img src="visao-docente-perfil-docente.png" alt="Print da interface do perfil de docente" />
+![Print da interface do perfil de docente](visao-docente-perfil-docente.png)
 
 --------------
 
 [Perfil grupo de pesquisa: protótipo navegável](https://www.figma.com/proto/hjdInaixuSTPC1rqKgWsKU/Linka?page-id=0%3A1&node-id=47-2474&viewport=100%2C567%2C0.49&t=XQGKSJVHmNfB8ONt-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=47%3A1905)
 
-<img src="visao-docente-perfil-grupo.png" alt="Print da interface do perfil de grupo de pesquisa" />
+![Print da interface do perfil de grupo de pesquisa](visao-docente-perfil-grupo.png)

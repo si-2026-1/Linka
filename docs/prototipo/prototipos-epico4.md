@@ -4,12 +4,12 @@ O épico 4 está relacionado com a importação de informações de plataformas 
 
 ## Onboarding docente
 
-<img src="docente-onboarding-importar.png" alt="Print da interface do step 2 de onboarding de um docente" />
+![Print da interface do step 2 de onboarding de um docente](docente-onboarding-importar.png)
 
 ## Editar perfil
 
-<img src="docente-editarperfil.png" alt="Print da modal de edição de perfil docente" />
+![Print da modal de edição de perfil docente](docente-editarperfil.png)
 
 ## Editar publicações
 
-<img src="docente-editarperfilpublicacoes.png" alt="Print da modal de edição de perfil docente, publicações" />
+![Print da modal de edição de perfil docente, publicações](docente-editarperfilpublicacoes.png)

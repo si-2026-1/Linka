@@ -4,20 +4,20 @@ O quinto épico concentra os requisitos relacionados as dinâmicas de interaçã
 
 ## Criação de vagas
 
-<img src="nova-vaga.png" alt="Modal criação de vaga" />
+![Modal criação de vaga](nova-vaga.png)
 
 ## Contato 
 
-<img src="modal-contato.png" alt="Modal para entrar em contato com usuário" />
+![Modal para entrar em contato com usuário](modal-contato.png)
 
 ### Registro de mensagens entre estudantes e docentes
 
 [Protótipo navegável](https://www.figma.com/proto/hjdInaixuSTPC1rqKgWsKU/Linka?page-id=0%3A1&node-id=112-6816&viewport=100%2C567%2C0.49&t=XQGKSJVHmNfB8ONt-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=112%3A6816&show-proto-sidebar=1)
-<img src="estudante-mensagens.png" alt="Aba de mensagens na visão de um estudante" />
+![Aba de mensagens na visão de um estudante](estudante-mensagens.png)
 
 -------------
 
 [Protótipo navegável](https://www.figma.com/proto/hjdInaixuSTPC1rqKgWsKU/Linka?page-id=0%3A1&node-id=112-6829&viewport=100%2C567%2C0.49&t=XQGKSJVHmNfB8ONt-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=112%3A6829&show-proto-sidebar=1)
 
-<img src="docente-mensagens.png" alt="Aba de mensagens na visão de um docente" />
+![Aba de mensagens na visão de um docente](docente-mensagens.png)
 
